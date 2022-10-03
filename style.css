@@ -12,6 +12,9 @@ body {
   font-family: "Poppins", sans-serif;
   background:white;
 }
+                           /******************************** PC VIEW ************************************/
+
+/****** Navbar ******/
 
 .nav-header {
   display: flex;
@@ -81,11 +84,13 @@ body {
   color: #FCC232;
   transition: 500ms ease-in-out;
 }
-/*Hero Sectiom*/
+/***** End Navbar *****/
+
+/***** Hero Section *****/
 
 .hero {
   display: flex;
-  width: 90%;
+  max-width: 90%;
   height: 100vh;
   margin: 0 auto;
   justify-content:space-evenly;
@@ -101,7 +106,7 @@ body {
 }
 
 .hero-right {
-  width: 40%;
+  width: 30%;
   height: auto;
 }
 
@@ -129,42 +134,42 @@ body {
 .fa-brands:hover {
   color: #555554;
   transition: 500ms ease-in-out;
-
 }
 
-.icons-align {
+.icons {
   margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  
-
 }
+ /******* End Hero section ********/
+ /******* About Me section ********/
 
-.button1{
-  align-items: center;
-  padding:0.12em 1em;
-  border:0.9px solid black;
-  border-radius:0.45em;
-  text-decoration:none;
-  font-weight:200;
-  color:black;
-  text-align:center;
-  transition: all 0.2s;
+  .about-me {
+    height: calc(100vh - 66px );
+    background: #FCC232;
   }
-  .button1:hover{
-  color:#000000;
-  background-color:#FCC232;
+ /******* End About Me section ********/
+ /******* Projects section ********/
+  .projects {
+    height: calc(100vh - 66px );
+    max-width:90%;
+    margin: 0 auto;
   }
 
-  /******************************** TEBLET VIEW ************************************/
+
+
+
+ /******* Ebd Projects section ********/
+
+
+
+
+                         /******************************** TEBLET VIEW ************************************/
 
   @media screen and (min-width:769px) and (max-width:1023px) {
-  
+  /******* Hero Section *********/
     .hero {
       display: flex;
       flex-direction: column;
-      width: 90%;
+      max-width: 90%;
       margin: 0 auto;
       height: 100vh;
       justify-content:space-evenly;
@@ -183,15 +188,17 @@ body {
       width: 100%;
     }
 
-    .icons-align {
-      justify-content: center;
-    }
+  /******* End Hero Section *********/
+
+
+    
   }
 
-  /******************************** MOBILE VIEW ************************************/
-
-
+                            /******************************** MOBILE VIEW ************************************/
 @media screen and (max-width:768px) {
+
+ /***** Navbar *****/
+
   .material-symbols-outlined {
     display: block;
     
@@ -232,15 +239,19 @@ body {
 
   .show-links {
     display: block;
-    height: 192px;
+    height: 240px;
   }
 
+ /***** End Navbar *****/
 
-/**************************************/
+
+
+ /***** Hero Section *****/
+
 .hero {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  max-width: 90%;
   margin: 0 auto;
   height: 100vh;
   justify-content:space-evenly;
@@ -258,12 +269,19 @@ body {
   margin-top: -3rem;
   width: 100%;
 }
+ /***** End Hero Section *****/
 
-.icons-align {
-  justify-content: center;
+
+
+
+
+
+
+
+
+
 }
-}
-  
+   
 /*****************************************************/
 
 /***************************************************/
